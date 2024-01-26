@@ -47,11 +47,15 @@ body {
   background-color: rgb(88, 129, 129);
   width: 20%;
   height: 250px;
+  margin-top: 50px;
 }
-.guess-nbr-container {
+.guess-nbr-container,
+.game-msg-container,
+.score-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 .coin-img1 {
   display: flex;
@@ -60,5 +64,60 @@ body {
   margin-left: 10px;
 }
 .coin-img1 img {
+  width: 100px;
+}
+.coin-img2 img {
   width: 50px;
+}
+.game-msg p {
+  font-size: 3em;
+  margin-left: 7px;
+}
+.check-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 50px;
+}
+.input-value input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 120px;
+  margin-bottom: 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+}
+.check-button input {
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border-style: none;
+  background-color: red;
+  color: #fff;
+}
+.score,
+.highscore {
+  display: flex;
+  justify-content: center;
+  margin-right: 150px;
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.score img,
+.highscore img {
+  width: 20%;
+}
+.score p,
+.highscore p {
+  display: flex;
+  align-items: center;
+  font-size: 2em;
 }
