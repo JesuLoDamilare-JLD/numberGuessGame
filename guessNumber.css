@@ -79,13 +79,13 @@ body {
   align-items: center;
   flex-direction: column;
   margin-bottom: 30px;
-  margin-right: 50px;
+  margin-right: 90px;
 }
 .input-value input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 150px;
   height: 120px;
   margin-bottom: 10px;
   background-color: black;
@@ -93,6 +93,7 @@ body {
   color: #fff;
   text-align: center;
   font-size: 3em;
+  border: 3px solid #fff;
 }
 .check-button input {
   width: 100px;
