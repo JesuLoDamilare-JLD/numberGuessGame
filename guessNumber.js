@@ -9,25 +9,39 @@ document.querySelector(".check-button").addEventListener("click", function () {
   );
   if (!numberGuess) {
     document.querySelector(".game-msg p").textContent =
-      "You have not entered any number!";
+      "You have not entered any number!🙀";
+    document.querySelector(".coin-img2").style.display = "none";
   } else if (numberGuess === randomNumber) {
     document.querySelector(".game-msg p").textContent = "🏆Correct Number!";
     document.querySelector(".highscore span").textContent = score;
     document.querySelector(".game-container").style.backgroundImage =
-      "url('BG.jpg')";
-    document.querySelector(".game-container").style.backgroundSize = "contain";
+      "url('youwin.jpeg')";
+    document.querySelector(".game-container").style.backgroundSize = "cover";
+    document.querySelector(".game-container").style.backgroundRepeat =
+      "no-repeat";
+    let elements = document.querySelectorAll(
+      ".game-msg p, .score p, .score span, .highscore p, .highscore span"
+    );
+    elements.forEach(function (element) {
+      element.style.color = "blue";
+    });
+    document.querySelector(".coin-img2").style.display = "none";
   } else if (numberGuess > randomNumber) {
     document.querySelector(".game-msg p").textContent =
-      "Guess number is too high!!";
+      "Guess number is too high!!🔼";
     score--;
     document.querySelector(".score span").textContent = score;
+    document.querySelector(".coin-img2").style.display = "none";
   } else if (numberGuess < randomNumber) {
     document.querySelector(".game-msg p").textContent =
-      "Guess number is too low!!";
+      "Guess number is too low!!⏬";
     score--;
     document.querySelector(".score span").textContent = score;
+    document.querySelector(".coin-img2").style.display = "none";
   }
 });
-// Use the BG image for default
-// Find a winning image for winning
-// Find too high and too low image for the cases
+/* 
+over mouse click
+try again
+clean the code
+*/

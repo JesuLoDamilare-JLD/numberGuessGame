@@ -12,7 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 80%;
-  background-color: rgb(118, 140, 140);
+  background-image: url(BG.jpg);
+  background-size: contain;
   margin: 0 auto;
 }
 .container-head {
@@ -29,8 +30,8 @@ body {
   margin-left: 300px;
 }
 .between-number {
-  font-size: 1.2em;
-  color: #fff;
+  font-size: 1.7em;
+  color: #000;
 }
 .gmn {
   font-size: 4.5em;
@@ -48,6 +49,8 @@ body {
   width: 20%;
   height: 250px;
   margin-top: 50px;
+
+  border-radius: 10px;
 }
 .guess-nbr-container,
 .game-msg-container,
@@ -57,6 +60,7 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
+
 .coin-img1 {
   display: flex;
   align-items: baseline;
