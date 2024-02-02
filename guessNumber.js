@@ -25,7 +25,16 @@ document.querySelector(".check-button").addEventListener("click", function () {
     elements.forEach(function (element) {
       element.style.color = "blue";
     });
-    document.querySelector(".coin-img2").style.display = "none";
+    let containers = document.querySelectorAll(
+      ".guess-number, .input-value input, .check-button"
+    );
+    containers.forEach(function (container) {
+      container.style.opacity = "0.1";
+    });
+    let coinImg = document.querySelectorAll(".coin-img2, .coin-img1");
+    coinImg.forEach(function (coin) {
+      coin.style.display = "none";
+    });
   } else if (numberGuess > randomNumber) {
     document.querySelector(".game-msg p").textContent =
       "Guess number is too high!!🔼";
