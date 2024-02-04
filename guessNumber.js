@@ -49,8 +49,8 @@ document.querySelector(".check-button").addEventListener("click", function () {
     document.querySelector(".coin-img2").style.display = "none";
   }
   if (score < 0) {
-    document.querySelector(".game-msg p").textContent =
-      "Please click on the TRY-AGAIN image above to start over.";
+    document.querySelector(".game-msg p").innerHTML =
+      "Please click on the TRY-AGAIN <br>image above to start over.";
     document.querySelector(".score span").textContent = 0;
     document.querySelector(".game-container").style.backgroundImage =
       "url('youlost.png')";
