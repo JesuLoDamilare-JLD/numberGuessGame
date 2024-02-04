@@ -67,6 +67,12 @@ document.querySelector(".check-button").addEventListener("click", function () {
     coinImg.forEach(function (coin) {
       coin.style.display = "none";
     });
+    let elements = document.querySelectorAll(
+      ".game-msg p, .score p, .score span, .highscore p, .highscore span"
+    );
+    elements.forEach(function (element) {
+      element.style.color = "blue";
+    });
   }
 });
 
