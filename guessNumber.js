@@ -99,8 +99,10 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   coinImg.forEach(function (coin) {
     coin.style.display = "block";
   });
-  document.querySelector(".score span").textContent = 20;
+  document.querySelector(".score span").innerHTML =
+    document.querySelector(".score span");
 });
+
 /* 
 reset random
 reset score tostart from 20 when not lost or won but clicked reset
