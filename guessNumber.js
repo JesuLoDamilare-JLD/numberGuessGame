@@ -3,6 +3,7 @@ let randomNumber = Math.floor(Math.random() * 100) + 1;
 document.querySelector(".guess-number").innerHTML = randomNumber;
 let score = document.querySelector(".score span").textContent;
 let initialScore = 20;
+
 document.querySelector(".check-button").addEventListener("click", function () {
   const numberGuess = Number(
     document.querySelector(".input-value input").value
