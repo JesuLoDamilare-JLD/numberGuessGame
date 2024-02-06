@@ -99,8 +99,7 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   coinImg.forEach(function (coin) {
     coin.style.display = "block";
   });
-  document.querySelector(".score span").innerHTML =
-    document.querySelector(".score span");
+  document.querySelector(".score span").textContent = 20;
 });
 
 /* 
