@@ -2,7 +2,7 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 document.querySelector(".guess-number").innerHTML = randomNumber;
 let score = document.querySelector(".score span").textContent;
-
+let initialScore = 20;
 document.querySelector(".check-button").addEventListener("click", function () {
   const numberGuess = Number(
     document.querySelector(".input-value input").value
@@ -99,7 +99,9 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   coinImg.forEach(function (coin) {
     coin.style.display = "block";
   });
-  document.querySelector(".score span").textContent = 20;
+  document.querySelector(".input-value input").value = "";
+  score = initialScore;
+  document.querySelector(".score span").textContent = score;
 });
 
 /* 
