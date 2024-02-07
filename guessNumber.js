@@ -94,7 +94,7 @@ document.querySelector(".try-again img").addEventListener("click", function () {
     ".guess-number, .input-value input, .check-button"
   );
   containers.forEach(function (container) {
-    container.style.opacity = "1";
+    container.style.opacity = "0.9";
   });
   let coinImg = document.querySelectorAll(".coin-img2, .coin-img1");
   coinImg.forEach(function (coin) {
