@@ -1,6 +1,5 @@
 "use strict";
 let randomNumber = Math.floor(Math.random() * 100) + 1;
-document.querySelector(".guess-number").innerHTML = randomNumber;
 let score = document.querySelector(".score span").textContent;
 let initialScore = 20;
 
@@ -8,11 +7,14 @@ document.querySelector(".check-button").addEventListener("click", function () {
   const numberGuess = Number(
     document.querySelector(".input-value input").value
   );
+  // When no number is inputted
   if (!numberGuess) {
     document.querySelector(".game-msg p").textContent =
       "You have not entered any number!🙀";
     document.querySelector(".coin-img2").style.display = "none";
+    // when guess number is same as random number
   } else if (numberGuess === randomNumber) {
+    document.querySelector(".guess-number").innerHTML = randomNumber;
     document.querySelector(".game-msg p").textContent = "🏆Correct Number!";
     document.querySelector(".highscore span").textContent = score;
     document.querySelector(".game-container").style.backgroundImage =
@@ -27,7 +29,7 @@ document.querySelector(".check-button").addEventListener("click", function () {
       element.style.color = "blue";
     });
     let containers = document.querySelectorAll(
-      ".guess-number, .input-value input, .check-button"
+      ".input-value input, .check-button"
     );
     containers.forEach(function (container) {
       container.style.opacity = "0.1";
@@ -36,12 +38,14 @@ document.querySelector(".check-button").addEventListener("click", function () {
     coinImg.forEach(function (coin) {
       coin.style.display = "none";
     });
+    // When guess number is higher than random number
   } else if (numberGuess > randomNumber) {
     document.querySelector(".game-msg p").textContent =
       "Guess number is too high!!🔼";
     score--;
     document.querySelector(".score span").textContent = score;
     document.querySelector(".coin-img2").style.display = "none";
+    // when guess number is lower than random number
   } else if (numberGuess < randomNumber) {
     document.querySelector(".game-msg p").textContent =
       "Guess number is too low!!⏬";
@@ -49,6 +53,7 @@ document.querySelector(".check-button").addEventListener("click", function () {
     document.querySelector(".score span").textContent = score;
     document.querySelector(".coin-img2").style.display = "none";
   }
+  // when score is less than zero
   if (score < 0) {
     document.querySelector(".game-msg p").innerHTML =
       "Please click on the TRY-AGAIN <br>image above to start over.";
@@ -76,7 +81,7 @@ document.querySelector(".check-button").addEventListener("click", function () {
     });
   }
 });
-
+// reset game
 document.querySelector(".try-again img").addEventListener("click", function () {
   document.querySelector(".game-msg p").textContent = "Start guessing.....";
   document.querySelector(".highscore span").textContent = 0;
