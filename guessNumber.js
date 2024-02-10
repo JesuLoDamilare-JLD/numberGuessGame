@@ -2,6 +2,7 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let score = document.querySelector(".score span").textContent;
 let initialScore = 20;
+let highscore = document.querySelector(".highscore span").textContent;
 
 document.querySelector(".check-button").addEventListener("click", function () {
   const numberGuess = Number(
@@ -84,7 +85,7 @@ document.querySelector(".check-button").addEventListener("click", function () {
 // reset game
 document.querySelector(".try-again img").addEventListener("click", function () {
   document.querySelector(".game-msg p").textContent = "Start guessing.....";
-  document.querySelector(".highscore span").textContent = 0;
+
   document.querySelector(".game-container").style.backgroundImage =
     "url('BG.jpg')";
   document.querySelector(".game-container").style.backgroundSize = "contain";
@@ -105,6 +106,13 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   coinImg.forEach(function (coin) {
     coin.style.display = "block";
   });
+  if (score > highscore) {
+    document.querySelector(".highscore span").textContent = score;
+    highscore = score;
+  } else {
+    document.querySelector(".highscore span").textContent = highscore;
+  }
+
   document.querySelector(".input-value input").value = "";
   score = initialScore;
   document.querySelector(".score span").textContent = score;
