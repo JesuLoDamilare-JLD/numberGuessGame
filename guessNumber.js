@@ -109,8 +109,6 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   if (score > highscore) {
     document.querySelector(".highscore span").textContent = score;
     highscore = score;
-  } else {
-    document.querySelector(".highscore span").textContent = highscore;
   }
 
   document.querySelector(".input-value input").value = "";
