@@ -2,7 +2,7 @@
 let randomNumber = Math.floor(Math.random() * 100) + 1;
 let score = document.querySelector(".score span").textContent;
 let initialScore = 20;
-let highscore = document.querySelector(".highscore span").textContent;
+let highscore = Number(document.querySelector(".highscore span").innerHTML);
 
 document.querySelector(".check-button").addEventListener("click", function () {
   const numberGuess = Number(
@@ -17,13 +17,11 @@ document.querySelector(".check-button").addEventListener("click", function () {
   } else if (numberGuess === randomNumber) {
     document.querySelector(".guess-number").innerHTML = randomNumber;
     document.querySelector(".game-msg p").textContent = "🏆Correct Number!";
-    document.querySelector(".highscore span").textContent = score;
-    /*  if (score > highscore) {
+    // document.querySelector(".highscore span").textContent = score;
+    if (score > highscore) {
       document.querySelector(".highscore span").textContent = score;
-    } else {
       highscore = score;
-      document.querySelector(".highscore span").textContent = highscore;
-    } */
+    }
 
     document.querySelector(".game-container").style.backgroundImage =
       "url('youwin.jpeg')";
@@ -117,6 +115,8 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   document.querySelector(".input-value input").value = "";
   score = initialScore;
   document.querySelector(".score span").textContent = score;
+  document.querySelector(".guess-number").innerHTML = "?";
+  randomNumber = Math.floor(Math.random() * 100) + 1;
 });
 
 /* 
