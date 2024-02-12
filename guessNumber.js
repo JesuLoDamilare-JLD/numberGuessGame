@@ -18,6 +18,13 @@ document.querySelector(".check-button").addEventListener("click", function () {
     document.querySelector(".guess-number").innerHTML = randomNumber;
     document.querySelector(".game-msg p").textContent = "🏆Correct Number!";
     document.querySelector(".highscore span").textContent = score;
+    /*  if (score > highscore) {
+      document.querySelector(".highscore span").textContent = score;
+    } else {
+      highscore = score;
+      document.querySelector(".highscore span").textContent = highscore;
+    } */
+
     document.querySelector(".game-container").style.backgroundImage =
       "url('youwin.jpeg')";
     document.querySelector(".game-container").style.backgroundSize = "cover";
@@ -106,10 +113,6 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   coinImg.forEach(function (coin) {
     coin.style.display = "block";
   });
-  if (score > highscore) {
-    document.querySelector(".highscore span").textContent = score;
-    highscore = score;
-  }
 
   document.querySelector(".input-value input").value = "";
   score = initialScore;
