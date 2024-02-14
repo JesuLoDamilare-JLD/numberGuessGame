@@ -118,8 +118,3 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   document.querySelector(".guess-number").innerHTML = "?";
   randomNumber = Math.floor(Math.random() * 100) + 1;
 });
-
-/* 
-reset random
-reset score tostart from 20 when not lost or won but clicked reset
-*/
