@@ -6,7 +6,7 @@
 body {
   background-color: rgb(156, 159, 159);
   display: flex;
-  font-family: "Uncial Antiqua", system-ui;
+  font-family: font-family: "Orbitron", sans-serif;
 }
 .game-container {
   display: flex;
