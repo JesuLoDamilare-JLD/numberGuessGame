@@ -239,6 +239,9 @@ document.querySelector(".try-again img").addEventListener("click", function () {
   );
   containers.forEach(function (container) {
     container.style.opacity = "1";
+    if (container.tagName === "INPUT") {
+      container.disabled = false;
+    }
   });
   let coinImg = document.querySelectorAll(".coin-img2, .coin-img1");
   coinImg.forEach(function (coin) {
