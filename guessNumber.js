@@ -235,7 +235,7 @@ document.querySelector(".try-again img").addEventListener("click", function () {
     element.style.color = "#000";
   });
   let containers = document.querySelectorAll(
-    ".guess-number, .input-value input, .check-button"
+    ".guess-number, .input-value input, .check-button input"
   );
   containers.forEach(function (container) {
     container.style.opacity = "1";
