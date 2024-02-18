@@ -1,5 +1,5 @@
 "use strict";
-let randomNumber = Math.floor(Math.random() * 100) + 1;
+let randomNumber = Math.floor(Math.random() * 300) + 1;
 let score = document.querySelector(".score span").textContent;
 let initialScore = 10;
 let highscore = Number(document.querySelector(".highscore span").innerHTML);
@@ -174,14 +174,14 @@ document.querySelector(".check-button").addEventListener("click", function () {
     // When guess number is higher than random number
   } else if (numberGuess > randomNumber) {
     document.querySelector(".game-msg p").textContent =
-      "Guess number is too high!!🔼";
+      "Guessed number is too high!!🔼";
     score--;
     document.querySelector(".score span").textContent = score;
     document.querySelector(".coin-img2").style.display = "none";
     // when guess number is lower than random number
   } else if (numberGuess < randomNumber) {
     document.querySelector(".game-msg p").textContent =
-      "Guess number is too low!!⏬";
+      "Guessed number is too low!!⏬";
     score--;
     document.querySelector(".score span").textContent = score;
     document.querySelector(".coin-img2").style.display = "none";
