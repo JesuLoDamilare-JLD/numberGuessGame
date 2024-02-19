@@ -1,5 +1,5 @@
 "use strict";
-let randomNumber = Math.floor(Math.random() * 300) + 1;
+let randomNumber = Math.floor(Math.random() * 10000) + 1;
 let score = document.querySelector(".score span").textContent;
 let initialScore = 10;
 let highscore = Number(document.querySelector(".highscore span").innerHTML);
@@ -11,6 +11,16 @@ let gameLost = [
   "So you didn’t win this time, no biggie! Remember, sometimes you win, sometimes you learn. 😄 Let’s go for another round! Click the ‘Try Again’ button at the top of the page.",
   "Looks like the win eluded you this time! But hey, it’s not about winning or losing, it’s about having fun! 😄 If you’re ready for more fun, click the ‘Try Again’ button at the top of the page.",
   "Didn’t clinch the win this time, huh? But remember, the only way to win is to try one more time. 😄 So, ready to try again? Just click the ‘Try Again’ button at the top of the page.",
+  "Ah, victory was elusive this time! But remember, the fun is in the journey, not the destination. 😄 Ready for another adventure? Click the ‘Try Again’ button at the top of the page.",
+  "Missed the win this time? No worries! Remember, every setback is a setup for a comeback. 😄 Let's make that comeback happen! Click the ‘Try Again’ button at the top of the page.",
+  "Didn't win this round? That's okay! Remember, the real victory is in never giving up. 😄 Ready to jump back in? Click the ‘Try Again’ button at the top of the page.",
+  "Victory slipped away this time, but that's alright! Remember, the game isn't over till it's over. 😄 Ready to get back in the game? Click the ‘Try Again’ button at the top of the page.",
+  "Didn't grab the win this time? No problem! Remember, every game is a new opportunity. 😄 Ready to seize the next one? Click the ‘Try Again’ button at the top of the page.",
+  "Missed the win this time? That's okay! Remember, the greatest glory in gaming lies not in never falling, but in rising every time we fall. 😄 Ready to rise again? Click the ‘Try Again’ button at the top of the page.",
+  "So the win didn't come home this time? Don't sweat it! Remember, it's all about the thrill of the game. 😄 Ready for more thrills? Click the ‘Try Again’ button at the top of the page.",
+  "Didn't catch the win this time? No worries! Remember, every loss is just a chance to shine even brighter next time. 😄 Ready to shine? Click the ‘Try Again’ button at the top of the page.",
+  "Victory didn't choose you this time? That's alright! Remember, every game is a new chance to turn it all around. 😄 Ready to turn it around? Click the ‘Try Again’ button at the top of the page.",
+  "Didn't secure the win this time? Don't fret! Remember, in the game of life, you're always winning as long as you're having fun. 😄 Ready for more fun? Click the ‘Try Again’ button at the top of the page.",
 ];
 const gameLostArray = (msgArray) => {
   let gameLostGenerator = Math.floor(Math.random() * msgArray.length);
@@ -187,7 +197,7 @@ document.querySelector(".check-button").addEventListener("click", function () {
     document.querySelector(".coin-img2").style.display = "none";
   }
   // when score is less than zero
-  if (score < 0) {
+  if (score <= 0) {
     document.querySelector(".game-msg p").innerHTML = gameLostArray(gameLost);
     document.querySelector(".game-msg-container").style.width = "80%";
     document.querySelector(".game-msg p").style.fontSize = "1.8rem";
