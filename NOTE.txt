@@ -1,0 +1,17 @@
+"Exciting news for all our wonderful game lovers! 🎉 Based on your valuable feedback, we’ve made some updates to our web app game to make it a bit more challenging and fun. Now, the guessed number is between 1 and 10,000, unlike before when it was between 1 to 100. Also, you now have 10 chances to play, instead of 20.
+
+But don’t worry, with the increased difficulty comes an even better reward! 🏆 You’ll receive something special to make you smile, programmed to match with the day you play the game to win.
+
+And if you don’t win? We’ve got you covered with sweet, motivational messages each time to encourage you to play again. 😄
+
+Ready to take on the challenge? Please share your feedback and let us know how you’re enjoying the game. Use the link below to play:
+
+[Your Game Link Here]
+
+Happy gaming! 🎮"
+
+
+
+Do the responsiveness
+
+https://rb.gy/r5xvjz
