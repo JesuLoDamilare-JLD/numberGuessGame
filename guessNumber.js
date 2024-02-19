@@ -1,7 +1,7 @@
 "use strict";
 let randomNumber = Math.floor(Math.random() * 10000) + 1;
 let score = document.querySelector(".score span").textContent;
-let initialScore = 10;
+let initialScore = 12;
 let highscore = Number(document.querySelector(".highscore span").innerHTML);
 
 let gameLost = [
