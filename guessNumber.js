@@ -167,6 +167,7 @@ document.querySelector(".check-button").addEventListener("click", function () {
     );
     elements.forEach(function (element) {
       element.style.color = "blue";
+      element.style.fontWeight = "bold";
     });
     let containers = document.querySelectorAll(
       ".input-value input, .check-button input"
@@ -227,6 +228,7 @@ document.querySelector(".check-button").addEventListener("click", function () {
     );
     elements.forEach(function (element) {
       element.style.color = "blue";
+      element.style.fontWeight = "bold";
     });
   }
 });
