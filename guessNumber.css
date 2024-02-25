@@ -133,7 +133,7 @@ body {
     color: #fff;
   }
   .game-container {
-    background-size: cover;
+    background-size: 100vh;
   }
   .container-head img{
     width: 75px;
@@ -190,6 +190,7 @@ body {
 
 @media screen and (min-width: 769px) and (max-width:1024px) {
   body{
+    
     color: #fff;
   }
   .game-container {
