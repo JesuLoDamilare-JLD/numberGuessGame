@@ -126,3 +126,58 @@ body {
   align-items: center;
   font-size: 2em;
 }
+
+/* Responsiveness */
+@media screen and (max-width: 375px) {
+  .container-head img{
+    width: 75px;
+  height: auto;
+  margin-left: -5px;
+  }
+  .between-number {
+    font-size: 0.8em;
+  }
+  .gmn {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .guess-number {
+    font-size: 2.5em;
+    width: 30%;
+    height: 100px;
+    margin-top: 30px;
+  
+    border-radius: 10px;
+  }
+  .coin-img1 img, .coin-img2 img {
+    width: 30px;
+  }
+
+  .input-value input {
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+    font-size: 1.5em;
+  }
+  .check-button input {
+    margin-left: 50px;
+    margin-bottom: -1px;
+  }
+  .game-msg p {
+    font-size: 2em;
+  }
+  .score,
+.highscore {
+  margin-right: 30px;
+  margin-top: 15px;
+}
+.score img,
+.highscore img {
+  width: 30px;
+}
+.score p,
+.highscore p {
+  font-size: 1.2em;
+}
+}
