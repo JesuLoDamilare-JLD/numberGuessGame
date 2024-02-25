@@ -128,7 +128,13 @@ body {
 }
 
 /* Responsiveness */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
+  body{
+    color: #fff;
+  }
+  .game-container {
+    background-size: cover;
+  }
   .container-head img{
     width: 75px;
   height: auto;
@@ -179,5 +185,70 @@ body {
 .score p,
 .highscore p {
   font-size: 1.2em;
+}
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  body{
+    color: #fff;
+  }
+  .game-container {
+    background-size: cover;
+  }
+  .container-head img{
+    width: 100px;
+  height: auto;
+  margin-left: -5px;
+  }
+  .between-number {
+    font-size: 1.2em;
+  }
+  .gmn {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .guess-number {
+    font-size: 3.5em;
+    width: 30%;
+    height: 130px;
+    margin-top: 30px;
+  
+    border-radius: 10px;
+  }
+  .coin-img1 img, .coin-img2 img {
+    width: 40px;
+  }
+
+  .input-value input {
+    width: 150px;
+    height: 120px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+  }
+  .check-button input {
+    margin-left: 50px;
+    margin-bottom: 10px;
+    
+  }
+  .game-msg p {
+    font-size: 2.5em;
+  }
+  .score,
+.highscore {
+  margin-right: 230px;
+  margin-top: 15px;
+}
+.highscore {
+  margin-right: -10px;
+}
+.score img,
+.highscore img {
+  width: 30px;
+}
+.score p,
+.highscore p {
+  font-size: 1.7em;
 }
 }
